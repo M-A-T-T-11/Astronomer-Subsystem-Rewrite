@@ -22,8 +22,7 @@ public class Latch implements Subsystem {
 
     @Override
     public void update() {
-        double power;
-        power = manipController.getRightStickX();
+        double power = manipController.getRightStickX();
         servo.setPower(power);
     }
 }
